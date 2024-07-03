@@ -12,6 +12,7 @@ $(document).ready(function () {
         console.log(SelectedCardDown);
     })
 
+    $(".change").on("click", change);
     
 })
 
@@ -27,6 +28,11 @@ function DistributeCards() {
         $(this).text(index);
     });
 
+}
+
+function change() {
+    $(".UpCard button").text("DownCard")
+    $(".DownCard button").text("UpCard")
 }
 
 
