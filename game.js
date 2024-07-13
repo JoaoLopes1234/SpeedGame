@@ -29,11 +29,27 @@ function DistributeCards() {
     });
 
 }
+//tirary function
+function flipCard() {
+    if (SelectedCardUp == SelectedCardDown) {
+        alert("Você ganhou!");
+    } else {
+        alert("Você perdeu!");
+    }
+}
 
 function change() {
     $(".UpCard button").text("DownCard")
     $(".DownCard button").text("UpCard")
 }
+
+
+
+
+
+
+
+
 
 
 
